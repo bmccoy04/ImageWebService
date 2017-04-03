@@ -1,7 +1,6 @@
 module.exports = function(app){
     var test = require('../controllers/test');
-    var systemInfo = require('../controllers/serverInfo');
+    var images = require('../controllers/images');
     app.get('/test', test.test);    
-    app.get('/systemInfo', systemInfo.serverInfo);
-    app.get('/someting', systemInfo.something);
+    app.get('/images', images.images);
 }
